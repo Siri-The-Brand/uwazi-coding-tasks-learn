@@ -23,7 +23,7 @@ def view_responses():
 
 def main():
     st.set_page_config(page_title="Fun Coding Challenges", page_icon="🔢", layout="centered")
-    st.title("🖥️ Beginner Coding Challenges: Step-by-Step Learning!")
+    st.title("🖥️ Siri Solvers Beginner Coding Challenges: Step-by-Step Learning!")
 
     st.markdown("### 🚀 Watch this fun video to learn Python basics:")
     st.video("https://youtu.be/BX6_YBPr7Jw?si=Q81oeVDhKnctPA2A")
