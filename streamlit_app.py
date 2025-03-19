@@ -25,7 +25,7 @@ def main():
     st.set_page_config(page_title="Fun Coding Challenges", page_icon="🔢", layout="centered")
     st.title("🖥️ Siri Solvers Beginner Coding Challenges: Step-by-Step Learning!")
 
-    st.markdown("### 🚀 Watch this fun video to learn Python basics:")
+    st.markdown("### Hi, it's Ms Wabi 😊. It is time for us to now go deeper in Logical Math. Hoping mtabambika kuona how apps are made in a very easy and fun way . Tuanze na ka video  🚀 Watch this fun video to learn Python basics:")
     st.video("https://youtu.be/BX6_YBPr7Jw?si=Q81oeVDhKnctPA2A")
     st.markdown(
     """
