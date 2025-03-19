@@ -28,7 +28,7 @@ def main():
     st.sidebar.title("🔍 Navigation")
     option = st.sidebar.radio("Go to:", ["Challenges", "CSE Dashboard"])
 
-    if option == "📊 Dashboard":
+    if option == "CSE Dashboard":
         view_responses()
     else:
         st.markdown("""
