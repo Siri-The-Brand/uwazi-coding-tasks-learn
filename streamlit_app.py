@@ -31,11 +31,13 @@ def main():
     if challenge == "Build a Simple Calculator":
         st.subheader("🧮 Build a Simple Calculator")
         st.markdown("""
-        ### Instructions:
-        Write Python code to create a calculator that:
-        - Takes two numbers as input.
-        - Lets the user choose an operation (add, subtract, multiply, divide).
-        - Displays the result.
+        ### 🛠️ Let's Build a Calculator!
+        Imagine you're building a simple calculator app. Follow these steps:
+        1. **Get Inputs**: Ask the user for two numbers.
+        2. **Choose Operation**: Ask the user which operation (+, -, *, /) they want to perform.
+        3. **Calculate & Display**: Perform the calculation and show the result.
+        
+        💡 *Tip*: Use Python `input()` function to get user inputs.
         """)
         user_code = st.text_area("Enter your Python code here:", height=250)
         if st.button("Submit Calculator Code"):
@@ -45,49 +47,48 @@ def main():
     elif challenge == "Build a To-Do List App":
         st.subheader("📋 Build a To-Do List App")
         st.markdown("""
-        ### Instructions:
-        Write Python code for a to-do list app that:
-        - Lets the user add new tasks.
-        - Shows a list of all tasks.
-        - Allows tasks to be marked as completed or removed.
+        Let's build a cool To-Do list app together!
+        1. **Add Tasks**: Let the user type tasks.
+        2. **Show Tasks**: Display the list of tasks clearly.
+        3. **Manage Tasks**: Allow the user to remove tasks when they're done.
         """)
         user_code = st.text_area("Enter your Python code here:", height=250)
         if st.button("Submit To-Do List Code"):
             save_response(name, "Build a To-Do List App", user_code)
-            st.success("✅ Your to-do list code has been submitted!")
+            st.success("✅ Your To-Do List code has been submitted!")
 
     elif challenge == "Guess the Number Game":
         st.subheader("🎲 Guess the Number Game")
         st.markdown("""
-        ### Instructions:
-        Write Python code for a game where:
-        - The program selects a random number between 1 and 100.
-        - The user tries to guess the number.
-        - The program provides feedback (too high, too low, correct).
+        ### Let's create a fun game!
+        - The computer picks a random number from 1 to 100.
+        - The user tries to guess it.
+        - The computer gives hints: too high, too low, or correct!
         """)
         user_code = st.text_area("Enter your Python code here:", height=250)
-        if st.button("Submit Guess the Number Code"):
+        if st.button("Submit Guess the Number Game Code"):
             save_response(name, "Guess the Number Game", user_code)
-            st.success("✅ Your guess-the-number game code has been submitted!")
+            st.success("✅ Your game code has been submitted!")
 
     elif challenge == "Siri Time - Design Thinking":
         st.subheader("🌍 Siri Time - Design Thinking")
         st.markdown("""
-        ## Identify a Problem in Your Community
-        - Clearly describe the problem.
-        - Form a team and assign roles.
-        - Plan to build an app using coding to solve this problem step-by-step.
+        ## Let's Solve a Real-World Problem!
+        Follow these steps:
+        1. Clearly describe a real problem in your community.
+        2. Form a team and pick a leader.
+        3. Assign roles and responsibilities.
+        3. Plan an app idea to solve this problem.
         """)
-
-        problem_statement = st.text_area("Describe the problem in your community:")
-        team_lead = st.text_input("Enter Team Lead Name:")
+        problem_statement = st.text_area("What's the problem in your community?")
+        team_lead = st.text_input("Who's the Team Leader?")
         team_members = st.text_area("List your team members (comma-separated):")
-        roles = st.text_area("Assign roles to team members:")
+        roles = st.text_area("Assign roles to each member:")
 
         if st.button("Save Project Idea"):
             response = f"Problem: {problem_statement}\nTeam Lead: {team_lead}\nMembers: {team_members}\nRoles: {roles}"
             save_response(name, "Siri Time - Design Thinking", response)
-            st.success("✅ Your project idea has been saved! Now start coding your solution.")
+            st.success("✅ Your idea is saved! Let's start coding!")
 
 if __name__ == "__main__":
     main()
