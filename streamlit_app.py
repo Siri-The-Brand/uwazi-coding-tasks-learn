@@ -52,6 +52,10 @@ def main():
 
             **Try coding this below! 👇**
             """)
+             user_code = st.text_area("Enter your Python code here:", height=250)
+             if st.button("Submit Calculator App Code"):
+                save_response(name, challenge, user_code)
+                st.success("✅ Your Calculator App code has been submitted!")
 
         elif challenge == "Build a To-Do List App":
             st.subheader("📋 Let's Build a To-Do List!")
