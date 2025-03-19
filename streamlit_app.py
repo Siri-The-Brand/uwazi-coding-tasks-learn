@@ -27,6 +27,16 @@ def main():
 
     st.markdown("### 🚀 Watch this fun video to learn Python basics:")
     st.video("https://youtu.be/BX6_YBPr7Jw?si=Q81oeVDhKnctPA2A")
+    st.markdown(
+    """
+    <style>
+    iframe {
+        width: 70% !important;
+        height: auto !important;
+    }
+    """,
+    unsafe_allow_html=True
+)
 
     st.sidebar.title("🔍 Navigation")
     option = st.sidebar.radio("Go to:", ["Challenges", "CSE Dashboard"])
